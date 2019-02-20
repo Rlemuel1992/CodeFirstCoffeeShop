@@ -1,5 +1,5 @@
 ﻿@using System.Data.SqlClient;
-
+@using Dapper
 
 @using (SqlConnection connection = new SqlConnection("Data Source=LAPTOP-6M65FED7\\SQLEXPRESS;Initial Catalog=Database_Connection.Models.ItemDBContext;Integrated Security=True"))
 {
@@ -20,12 +20,12 @@
 		</style>
 	</head>
 	<body>
-		<h1>Small Bakery Products</h1>
+		<h1>Ron's Coffee Shop</h1>
 		<table>
 			<thead>
 				<tr>
 					<th>Id</th>
-					<th>Product</th>
+					<th>Products</th>
 					<th>Description</th>
 					<th>Price</th>
 				</tr>
@@ -35,7 +35,7 @@
 				{
 					<tr>
 						<td>@row.ID</td>
-						<td>@row.Product</td>
+						<td>@row.ProductName</td>
 						<td>@row.Description</td>
 						<td>@row.Price</td>
 					</tr>

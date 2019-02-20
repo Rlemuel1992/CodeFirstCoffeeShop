@@ -12,6 +12,7 @@ namespace Database_Connection.Controllers
 {
     public class UsersController : Controller
     {
+
         private UserDBContext db = new UserDBContext();
 
         // GET: Users
@@ -49,7 +50,7 @@ namespace Database_Connection.Controllers
             {
                 db.FakeUserLogin.Add(users);
                 db.SaveChanges();
-				Session["CurrentUser"] = users;
+				Session["CurrentUser"] = users.Name;
                 return RedirectToAction("Index", "Home");
             }
 

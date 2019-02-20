@@ -83,3 +83,4 @@ C:\Users\Ronad\source\repos\Database Connection\Database Connection\obj\Debug\Da
 C:\Users\Ronad\source\repos\Database Connection\Database Connection\obj\Debug\Database Connection.csproj.CopyComplete
 C:\Users\Ronad\source\repos\Database Connection\Database Connection\obj\Debug\Database Connection.dll
 C:\Users\Ronad\source\repos\Database Connection\Database Connection\obj\Debug\Database Connection.pdb
+C:\Users\Ronad\source\repos\Database Connection\Database Connection\obj\Debug\Database Connection.csprojAssemblyReference.cache

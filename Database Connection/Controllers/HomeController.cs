@@ -23,8 +23,8 @@ public ActionResult Index()
 				AllProducts = connection.Query<Products>(selectQueryString).ToList();
 
 			}
-			
-			return View(AllProducts);
+			Session["AllProducts"] = AllProducts;
+			return View();
 		}
 
 		public ActionResult Login()
