@@ -24,21 +24,25 @@
 		<table>
 			<thead>
 				<tr>
-					<th>Id</th>
+				
 					<th>Products</th>
 					<th>Description</th>
 					<th>Price</th>
+					<th>Add 1 to cart</th>
+					<th>Add 5 to cart</th>
 				</tr>
 			</thead>
 			<tbody>
 				@foreach (var row in connection.Query(selectQueryString))
 				{
-					<tr>
-						<td>@row.ID</td>
-						<td>@row.ProductName</td>
-						<td>@row.Description</td>
-						<td>@row.Price</td>
-					</tr>
+				<tr>
+					<td>@row.ProductName</td>
+					<td>@row.Description</td>
+					<td>@row.Price</td>
+					<td><a href="/Home/AddItem?Quantity=1&ItemName=@row.ProductName"> Add 1</a></td>
+					<td><a href="/Home/AddItem?Quantity=5&ItemName=@row.ProductName"> Add 5</a></td>
+
+				</tr>
 				}
 			</tbody>
 		</table>
